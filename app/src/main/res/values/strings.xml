@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TodoListApp</string>
+    <string name="title_activity_to_do_add">Agregar una tarea</string>
+    <string name="hintTitulo">Titulo de la tarea</string>
+    <string name="hintDescripcion">Descripción de la tarea</string>
+    <string name="rbBaja">Baja</string>
+    <string name="rbMedia">Media</string>
+    <string name="rbAlta">Alta</string>
+    <string name="btnAgregarTarea">Agregar la tarea</string>
 </resources>
