@@ -1,6 +1,6 @@
 package tech.inversa.todolistapp.data
 
-import androidx.room.*
+import android.arch.persistence.room.*
 
 @Dao
 interface ToDoDao {

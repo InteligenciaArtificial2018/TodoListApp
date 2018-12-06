@@ -18,8 +18,7 @@
         </activity>
         <activity
                 android:name=".ToDoAddActivity"
-                android:label="@string/title_activity_to_do_add"
-                android:theme="@style/AppTheme.NoActionBar">
+                android:label="@string/title_activity_to_do_add">
         </activity>
     </application>
 
