@@ -18,18 +18,17 @@ abstract class ToDoListDatabase: RoomDatabase() {
      */
     companion object {
         val databaseName = "tododatabase"
-        val todoListDatabase: ToDoListDatabase? = null
+        var todoListDatabase: ToDoListDatabase? = null
 
         fun getInstance(context: Context): ToDoListDatabase? {
             if (todoListDatabase == null) {
                 todoListDatabase = Room.databaseBuilder(context,
                     ToDoListDatabase::class.java,
-                    ToDoListDatabase.databaseName,
+                    ToDoListDatabase.databaseName)
                     .allowMainThreadQueries()
                     .build()
-                )
-                return todoListDatabase
             }
+            return todoListDatabase
         }
     }
 }
