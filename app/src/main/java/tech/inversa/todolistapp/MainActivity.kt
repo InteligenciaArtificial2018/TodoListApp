@@ -4,12 +4,18 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import tech.inversa.todolistapp.data.ToDoListDatabase
 
 class MainActivity : AppCompatActivity() {
+    private var todoDatabase: ToDoListDatabase? = null
+    private var todoAdapter: TodoAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        todoDatabase = ToDoListDatabase.getInstance(this)
+        todoAdapter = TodoAdapter()
 
         // Llamar la activity de agregar tarea mediante el floating action button
         fabAddToDo.setOnClickListener {
