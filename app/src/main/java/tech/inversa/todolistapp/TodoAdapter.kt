@@ -8,15 +8,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import tech.inversa.todolistapp.data.Todo
 
-class TodoAdapter(var todoList: List<Todo> = ArrayList<Todo>()): RecyclerView.Adapter<TodoAdapter.ViewHolder>() {
+class TodoAdapter(var todoList: List<Todo>? = ArrayList<Todo>()): RecyclerView.Adapter<TodoAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): TodoAdapter.ViewHolder {
         val vista = LayoutInflater.from(parent.context).inflate(R.layout.template_todo_item, parent, false)
 
-        return ViewHolder(vista, todoList)
+        return ViewHolder(vista, todoList!!)
     }
 
     override fun getItemCount(): Int {
-        return todoList.count()
+        return todoList?.count()!!
     }
 
     override fun onBindViewHolder(holder: TodoAdapter.ViewHolder, position: Int) {
