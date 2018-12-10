@@ -21,8 +21,8 @@ class ToDoAddActivity : AppCompatActivity(), RadioGroup.OnCheckedChangeListener 
         rgPrioridad.setOnCheckedChangeListener(this)
 
         // Validar si se nos envía el intent con el valor del título
-        val titulo = intent.getStringExtra("titulo")
-        val descripcion = intent.getStringExtra("descripcion")
+        val titulo = intent.getStringExtra("asunto")
+        val descripcion = intent.getStringExtra("detalle")
 
         // Si no está definido o viene en blanco, el usuario presionó el FAB
         if (titulo == null || titulo == "") {
