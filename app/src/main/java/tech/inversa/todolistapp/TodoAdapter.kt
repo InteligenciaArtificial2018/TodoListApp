@@ -27,6 +27,10 @@ class TodoAdapter(var todoList: List<Todo>? = ArrayList<Todo>()): RecyclerView.A
         holder.vista.setOnClickListener{
             onTodoItemClickListener?.onTodoItemClickListener(todoList?.get(position)!!)
         }
+        holder.vista.setOnLongClickListener{
+            onTodoItemClickListener?.onTodoItemLongClickListener(todoList?.get(position)!!)
+            true
+        }
         holder.onBindViews(position)
     }
 

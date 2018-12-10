@@ -7,4 +7,11 @@
     <string name="rbMedia">Media</string>
     <string name="rbAlta">Alta</string>
     <string name="btnAgregarTarea">Agregar la tarea</string>
+    <string name="tituloDialogoLongClick">Elija una acción</string>
+    <string name="mensajeDialogoLongClick">¿Qué desea realizar con la tarea seleccionada?</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="mensajeCancelarDialogoLongClick">No se han realizado cambios en las tareas</string>
+    <string name="mensajetareaEliminada">Tarea eliminada satisfactoriamente</string>
 </resources>
